@@ -1,0 +1,88 @@
+:root {
+    --color-background: #000000;
+    --color-text-white: #ffffff;
+    --color-button: #f1f14d;
+    --color-button-dark: #e2e26a;
+
+    
+    font-size: 70%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100vh;
+}
+
+body, textarea {
+    font: 400 2.5rem Dosis;
+    color: var(--color-text-white);
+}
+
+body {
+    background: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font: 400 Righteous;
+    color: #ffffff
+}
+
+button {
+    border: none solid var(--color-button);
+    border-radius: 1.3rem;
+    background: var(--color-button);
+    align-items: center;
+    padding: 2rem;
+    font: 700 1.8rem Dosis;
+    cursor: pointer;
+
+    transition: background 0.2s; /*transition: nome do valor a ser mudado e os segundos para a mudança acontecer*/
+}
+
+button:hover {
+    background: var(--color-button-dark)
+}
+
+/*# = ID e . = class*/
+
+#header.container {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    border: none;
+}
+
+#buttons-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+
+#header-container .title-description {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+#header-container #freud-image {
+    max-width: 80vw;
+    margin-top: 1rem;
+
+    display: flex;
+    justify-content: center;
+
+    border: .5rem solid white;
+    border-radius: 50%;
+}
+
+#history-button {
+    margin-right: 1rem;
+}
